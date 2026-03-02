@@ -1,10 +1,10 @@
-# 🛡️ Network Intrusion Detection System — CIC-IDS Dataset
+#  Network Intrusion Detection System — CIC-IDS Dataset
 
 A machine learning pipeline for detecting network intrusion attacks using the [CIC-IDS dataset](https://www.unb.ca/cic/datasets/ids-2017.html). This project covers the full ML lifecycle: data ingestion, feature engineering, model training, evaluation, and optimization.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── Data_ignestion.ipynb                    # Data loading, cleaning, and preprocessing
@@ -15,20 +15,20 @@ A machine learning pipeline for detecting network intrusion attacks using the [C
 
 ---
 
-## 🧠 Models Trained
+##  Models Trained
 
 | Model | AUC-ROC |
 |---|---|
 | Logistic Regression | 0.8616 |
 | Decision Tree | 0.9466 |
 | Random Forest | 0.9865 |
-| **Gradient Boosted Trees (GBT)** | **0.9896** ✅ |
+| **Gradient Boosted Trees (GBT)** | **0.9896**  |
 
 > **GBT achieved the best overall performance**, with the lowest false positive rate and highest AUC score.
 
 ---
 
-## 📊 Results
+##  Results
 
 ### Confusion Matrices
 All 4 models were evaluated on the CIC-IDS test set. GBT produced the fewest false positives (607), making it the most reliable for production deployment.
@@ -48,7 +48,7 @@ Decision Tree, Random Forest, and GBT all maintain precision near 1.0 across mos
 
 ---
 
-## 🔍 Feature Importance
+##  Feature Importance
 
 Both Random Forest and GBT agree on the most predictive features:
 
@@ -61,7 +61,7 @@ Both Random Forest and GBT agree on the most predictive features:
 
 ---
 
-## ⚙️ Pipeline Overview
+##  Pipeline Overview
 
 ### 1. Data Ingestion (`Data_ignestion.ipynb`)
 - Load and merge raw CIC-IDS CSV files
@@ -81,7 +81,7 @@ Both Random Forest and GBT agree on the most predictive features:
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 ```bash
@@ -102,7 +102,7 @@ jupyter notebook Model_Optimization.ipynb
 
 ---
 
-## 📦 Dataset
+##  Dataset
 
 This project uses the **CIC-IDS 2017 / 2018** dataset from the Canadian Institute for Cybersecurity.
 
